@@ -1,0 +1,282 @@
+[
+  {
+    "origin": "Tel-Aviv",
+    "target": "Ramat-Gan",
+    "distance": 4.3
+  },
+  {
+    "origin": "Tel-Aviv",
+    "target": "Petach-Tikva",
+    "distance": 12.3
+  },
+  {
+    "origin": "Tel-Aviv",
+    "target": "Haifa",
+    "distance": 100.2
+  },
+  {
+    "origin": "Tel-Aviv",
+    "target": "Bat-Yam",
+    "distance": 11.5
+  },
+  {
+    "origin": "Tel-Aviv",
+    "target": "Holon",
+    "distance": 14.5
+  },
+  {
+    "origin": "Tel-Aviv",
+    "target": "Rishon-lezion",
+    "distance": 24.5
+  },
+  {
+    "origin": "Tel-Aviv",
+    "target": "Ness-Ziona",
+    "distance": 29.1
+  },
+  {
+    "origin": "Tel-Aviv",
+    "target": "Ashdod",
+    "distance": 59.8
+  },
+  {
+    "origin": "Tel-Aviv",
+    "target": "Ramla",
+    "distance": 34
+  },
+  {
+    "origin": "Tel-Aviv",
+    "target": "Jerusalem",
+    "distance": 87.2
+  },
+  {
+    "origin": "Ramat-Gan",
+    "target": "Petach-Tikva",
+    "distance": 8
+  },
+  {
+    "origin": "Ramat-Gan",
+    "target": "Haifa",
+    "distance": 99.8
+  },
+  {
+    "origin": "Ramat-Gan",
+    "target": "Bat-Yam",
+    "distance": 15.8
+  },
+  {
+    "origin": "Ramat-Gan",
+    "target": "Bat-Yam",
+    "distance": 18.8
+  },
+  {
+    "origin": "Ramat-Gan",
+    "target": "Holon",
+    "distance": 18.8
+  },
+  {
+    "origin": "Ramat-Gan",
+    "target": "Rishon-lezion",
+    "distance": 28.8
+  },
+  {
+    "origin": "Ramat-Gan",
+    "target": "Ness-Ziona",
+    "distance": 33.4
+  },
+  {
+    "origin": "Ramat-Gan",
+    "target": "Ashdod",
+    "distance": 64.1
+  },
+  {
+    "origin": "Ramat-Gan",
+    "target": "Ramla",
+    "distance": 38.3
+  },
+  {
+    "origin": "Ramat-Gan",
+    "target": "Jerusalem",
+    "distance": 91.5
+  },
+  {
+    "origin": "Petach-Tikva",
+    "target": "Haifa",
+    "distance": 97.3
+  },
+  {
+    "origin": "Petach-Tikva",
+    "target": "Bat-Yam",
+    "distance": 23.8
+  },
+  {
+    "origin": "Petach-Tikva",
+    "target": "Holon",
+    "distance": 26.8
+  },
+  {
+    "origin": "Petach-Tikva",
+    "target": "Rishon-lezion",
+    "distance": 36.8
+  },
+  {
+    "origin": "Petach-Tikva",
+    "target": "Ness-Ziona",
+    "distance": 41.4
+  },
+  {
+    "origin": "Petach-Tikva",
+    "target": "Ashdod",
+    "distance": 72.1
+  },
+  {
+    "origin": "Petach-Tikva",
+    "target": "Ramla",
+    "distance": 46.3
+  },
+  {
+    "origin": "Petach-Tikva",
+    "target": "Jerusalem",
+    "distance": 99.5
+  },
+  {
+    "origin": "Haifa",
+    "target": "Bat-Yam",
+    "distance": 111.7
+  },
+  {
+    "origin": "Haifa",
+    "target": "Holon",
+    "distance": 114.7
+  },
+  {
+    "origin": "Haifa",
+    "target": "Rishon-lezion",
+    "distance": 124.7
+  },
+  {
+    "origin": "Haifa",
+    "target": "Ness-Ziona",
+    "distance": 129.3
+  },
+  {
+    "origin": "Haifa",
+    "target": "Ashdod",
+    "distance": 160
+  },
+  {
+    "origin": "Haifa",
+    "target": "Ramla",
+    "distance": 134.2
+  },
+  {
+    "origin": "Haifa",
+    "target": "Jerusalem",
+    "distance": 187.4
+  },
+  {
+    "origin": "Bat-Yam",
+    "target": "Holon",
+    "distance": 3
+  },
+  {
+    "origin": "Bat-Yam",
+    "target": "Rishon-lezion",
+    "distance": 13
+  },
+  {
+    "origin": "Bat-Yam",
+    "target": "Ness-Ziona",
+    "distance": 17.6
+  },
+  {
+    "origin": "Bat-Yam",
+    "target": "Ashdod",
+    "distance": 48.3
+  },
+  {
+    "origin": "Bat-Yam",
+    "target": "Ramla",
+    "distance": 22.5
+  },
+  {
+    "origin": "Bat-Yam",
+    "target": "Jerusalem",
+    "distance": 75.7
+  },
+  {
+    "origin": "Holon",
+    "target": "Rishon-lezion",
+    "distance": 10
+  },
+  {
+    "origin": "Holon",
+    "target": "Ness-Ziona",
+    "distance": 14.6
+  },
+  {
+    "origin": "Holon",
+    "target": "Ashdod",
+    "distance": 45.3
+  },
+  {
+    "origin": "Holon",
+    "target": "Ramla",
+    "distance": 20
+  },
+  {
+    "origin": "Holon",
+    "target": "Jerusalem",
+    "distance": 73.2
+  },
+  {
+    "origin": "Rishon-lezion",
+    "target": "Ness-Ziona",
+    "distance": 4.6
+  },
+  {
+    "origin": "Rishon-lezion",
+    "target": "Ashdod",
+    "distance": 35.3
+  },
+  {
+    "origin": "Rishon-lezion",
+    "target": "Ramla",
+    "distance": 10
+  },
+  {
+    "origin": "Rishon-lezion",
+    "target": "Jerusalem",
+    "distance": 63.2
+  },
+  {
+    "origin": "Ness-Ziona",
+    "target": "Ashdod",
+    "distance": 30.7
+  },
+  {
+    "origin": "Ness-Ziona",
+    "target": "Ramla",
+    "distance": 7.6
+  },
+  {
+    "origin": "Ness-Ziona",
+    "target": "Jerusalem",
+    "distance": 60.8
+  },
+  {
+    "origin": "Ashdod",
+    "target": "Ramla",
+    "distance": 38.3
+  },
+  {
+    "origin": "Ashdod",
+    "target": "Jerusalem",
+    "distance": 91.5
+  },
+  {
+    "origin": "Ramla",
+    "target": "Jerusalem",
+    "distance": 53.2
+  }
+]
