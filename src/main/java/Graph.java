@@ -56,9 +56,9 @@ public class Graph {
                 edgeList.add(edge);
             });
 
-//            Graph graph = new Graph(edgeList.toArray()); // FIX: this.
-//
-//            System.out.println(graph.getClass()); // NOTE: do what you want with the Graph
+            Graph graph = new Graph(edgeList.toArray()); FIX: this.
+
+            System.out.println(graph.getClass()); // NOTE: do what you want with the Graph
 
         } catch (Exception e) {
             System.out.println(e.getMessage());
