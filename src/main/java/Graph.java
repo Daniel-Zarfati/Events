@@ -12,12 +12,52 @@ import java.util.List;
 
 public class Graph {
 
-    private Edge[] edges;
+    //public Edge[] edges;
+    private List<Edge> edgeList;
+    private int noOfNodes;
+    private Node[] nodes;
+    private int noOfEdges;
 
-    public Graph(Edge[] edges) {
-        this.edges = edges;
+    public Graph(List<Edge> edgeList) {
+
+        this.edgeList = edgeList;
+        this.noOfNodes = calculateNoOfNodes(edgeList);
+        this.nodes= new Node[this.noOfNodes];
+        //create all nodes ready to be updated with edges
+        for(int n=0; n<this.noOfNodes; n++){
+            this.nodes[n] = new Node();
+        }
+        //add all the edges to the nodes, each edge added to two nodes(to and from)
+        this.noOfEdges = edgeList.size();
+        for(int edgeToAdd=0; edgeToAdd< this.noOfEdges; edgeToAdd++){
+            this.nodes[edgeList.get(edgeToAdd).getFromNodeIndex()].getEdges().add(edgeList.get(edgeToAdd));
+            this.nodes[edgeList.get(edgeToAdd).getToNodeIndex()].getEdges().add(edgeList.get(edgeToAdd));
+        }
+    }
+    private int calculateNoOfNodes(List<Edge> edgeList){
+        int noOfNodes = 0;
+        for(Edge e : edgeList){
+            if(e.getToNodeIndex() > noOfNodes)
+                noOfNodes = e.getToNodeIndex();
+            if(e.getFromNodeIndex() > noOfNodes)
+                noOfNodes= e.getFromNodeIndex();
+        }
+        noOfNodes++;
+        return noOfNodes;
     }
 
+    public Node[] getNodes(){
+        return nodes;
+    }
+    public int getNoOfNodes() {
+        return noOfNodes;
+    }
+    public List<Edge> getEdges(){
+        return edgeList;
+    }
+    public int getNoOfEdges(){
+        return noOfEdges;
+    }
     public static JSONObject LoadMap() throws IOException {
         JSONParser parser = new JSONParser();
         JSONObject jsonObject = null;
@@ -32,7 +72,7 @@ public class Graph {
         return jsonObject;
     }
 
-    public static void main(String[] arg) {
+    public static void main (String[] arg) {
         JSONParser parser = new JSONParser();
 
         try {
@@ -56,12 +96,13 @@ public class Graph {
                 edgeList.add(edge);
             });
 
-            Graph graph = new Graph(edgeList.toArray()); FIX: this.
+          Graph graph = new Graph(edgeList);
+          System.out.println(graph.getClass()); // NOTE: do what you want with the Graph
 
-            System.out.println(graph.getClass()); // NOTE: do what you want with the Graph
 
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
     }
+
 }
