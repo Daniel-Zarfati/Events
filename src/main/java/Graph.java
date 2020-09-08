@@ -7,12 +7,11 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Arrays;
+//import java.util.Arrays;
 import java.util.List;
 
 public class Graph {
 
-    //public Edge[] edges;
     private List<Edge> edgeList;
     private int noOfNodes;
     private Node[] nodes;
@@ -43,6 +42,7 @@ public class Graph {
                 noOfNodes= e.getFromNodeIndex();
         }
         noOfNodes++;
+        System.out.println(noOfNodes-1);
         return noOfNodes;
     }
 
@@ -79,7 +79,7 @@ public class Graph {
             JSONObject map = LoadMap();
             String filePath = "src/main/resources/data/locations.json";
             JSONArray jsonArray = (JSONArray) parser.parse(new FileReader(filePath));
-            System.out.println(jsonArray);
+           // System.out.println(jsonArray);
             List<Edge> edgeList = new ArrayList<Edge>();
 
             jsonArray.forEach(item -> {
@@ -92,12 +92,13 @@ public class Graph {
                 double distance = ((Number) obj.get("distance")).doubleValue();
 
                 Edge edge = new Edge(originIndex, targetIndex, (int) distance);
-                System.out.println("New Edge Created from " + origin + " to " + target);
+                //System.out.println("New Edge Created from " + origin + " to " + target);
                 edgeList.add(edge);
             });
 
           Graph graph = new Graph(edgeList);
-          System.out.println(graph.getClass()); // NOTE: do what you want with the Graph
+          //System.out.println(graph.getClass()); // NOTE: do what you want with the Graph
+
 
 
         } catch (Exception e) {
